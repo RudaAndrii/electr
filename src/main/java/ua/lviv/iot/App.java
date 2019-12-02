@@ -7,7 +7,7 @@ package ua.lviv.iot;
 public class App
 {
 
-    public static final String HARD = "/Users/admin/Documents/studying/scala/electr/src/main/java/ua/lviv/iot/hard.txt";
+    private static final String HARD = "/Users/admin/Documents/studying/scala/electr/src/main/java/ua/lviv/iot/hard.txt";
 
     public static void main(String[] args )
     {

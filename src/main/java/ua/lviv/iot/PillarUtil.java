@@ -17,10 +17,10 @@ public class PillarUtil {
             Double firstTemp = first;
             Double secondTemp = second;
 
-            Double floorToFloor = getDistance(distance, pillars.get(i).getMinHeight(), pillars.get(i+1).getMinHeight());
-            Double floorToTop = getDistance(distance, pillars.get(i).getMinHeight(), pillars.get(i+1).getMaxHeight());
             Double topToFloor = getDistance(distance, pillars.get(i).getMaxHeight(), pillars.get(i+1).getMinHeight());
             Double topToTop = getDistance(distance, pillars.get(i).getMaxHeight(), pillars.get(i+1).getMaxHeight());
+            Double floorToFloor = getDistance(distance, pillars.get(i).getMinHeight(), pillars.get(i+1).getMinHeight());
+            Double floorToTop = getDistance(distance, pillars.get(i).getMinHeight(), pillars.get(i+1).getMaxHeight());
 
             first = Math.max((floorToFloor + firstTemp), (topToFloor + secondTemp));
             second = Math.max((topToTop + secondTemp), (floorToTop + firstTemp));
